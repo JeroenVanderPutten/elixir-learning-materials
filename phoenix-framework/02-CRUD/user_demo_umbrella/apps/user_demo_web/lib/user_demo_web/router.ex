@@ -15,7 +15,8 @@ defmodule UserDemoWeb.Router do
 
   scope "/", UserDemoWeb do
     pipe_through :browser
-
+    get "/users/new", UserController, :new
+    post "/users", UserController, :create
     get "/", PageController, :index
   end
 
