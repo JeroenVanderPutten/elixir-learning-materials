@@ -73,6 +73,8 @@ mix ecto.reset
 
 # in / , your project root folder:
 iex -S mix phx.server
+voor mij en voor andere plebs is dat iex.bat for some awkward reason...
+
 #This starts the phoenix server in an interactive mode
 Erlang/OTP 22 [erts-10.6.3] [source] [64-bit] [smp:8:8] [ds:8:8:10] [async-threads:1] [hipe]
 
