@@ -15,9 +15,16 @@ defmodule UserDemoWeb.Router do
 
   scope "/", UserDemoWeb do
     pipe_through :browser
-    get "/users/new", UserController, :new
-    post "/users", UserController, :create
-    get "/", PageController, :index
+    #get "/users/new", UserController, :new
+    #post "/users", UserController, :create
+    #get "/", PageController, :index
+    #get "/users", UserController, :index
+    #get "/users/:user_id", UserController, :show
+    #get "/users/:user_id/edit", UserController, :edit
+    #put "/users/:user_id", UserController, :update
+    #patch "/users/:user_id", UserController, :update
+    #delete "/users/:user_id", UserController, :delete
+    resources("/users", UserController)
   end
 
   # Other scopes may use custom stacks.

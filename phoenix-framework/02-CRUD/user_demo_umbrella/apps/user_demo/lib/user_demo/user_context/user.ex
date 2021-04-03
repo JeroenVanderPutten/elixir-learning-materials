@@ -7,7 +7,6 @@ defmodule UserDemo.UserContext.User do
     field :first_name, :string
     field :last_name, :string
 
-    timestamps()
   end
 
   @doc false
